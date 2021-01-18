@@ -1,0 +1,1824 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "jugar a adivina el músculo",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar",
+            "cancela",
+            "espera"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda",
+            "dame ayuda",
+            "una ayuda",
+            "dame una ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "no",
+            "alto",
+            "basta",
+            "suficiente",
+            "finalizar",
+            "terminar"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "solucion",
+              "type": "solucion"
+            },
+            {
+              "name": "articulo",
+              "type": "articulo"
+            }
+          ],
+          "samples": [
+            "la respuesta es {articulo} musculo {solucion}",
+            "la respuesta es {articulo} {solucion}",
+            "la respuesta es {solucion}",
+            "es {articulo} {solucion}",
+            "es {solucion}",
+            "en {articulo} {solucion}",
+            "{articulo} {solucion}",
+            "en {solucion}",
+            "{solucion}"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "ok",
+            "correcto",
+            "afirmativo",
+            "de acuerdo",
+            "vale",
+            "si",
+            "adelante",
+            "venga",
+            "vamos"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "vuelve a decirlo",
+            "vuelve a decirla",
+            "vuelve a decir la adivinanza",
+            "dime otra vez",
+            "dime otra vez la adivinanza",
+            "dilo otra vez",
+            "dila otra vez",
+            "di la adivinanza otra vez",
+            "dímelo otra vez",
+            "dímela otra vez",
+            "dime la adivinanza otra vez",
+            "repite",
+            "repítelo",
+            "repítela",
+            "repite la adivinanza",
+            "repite de nuevo",
+            "repite de nuevo la adivinanza",
+            "repite otra vez",
+            "repite otra vez la adivinanza",
+            "repítelo de nuevo",
+            "repítela de nuevo",
+            "repite la adivinanza de nuevo",
+            "repítelo otra vez",
+            "repítela otra vez",
+            "repite la adivinanza otra vez",
+            "repítemelo",
+            "repítemela",
+            "repíteme la adivinanza",
+            "repítemelo de nuevo",
+            "repítemela de nuevo",
+            "repíteme la adivinanza de nuevo",
+            "repítemelo otra vez",
+            "repítemela otra vez",
+            "repíteme la adivinanza otra vez"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": [
+            "siguiente",
+            "siguiente adivinanza",
+            "dime la siguiente",
+            "dime la siguiente adivinanza",
+            "paso",
+            "pasa palabra",
+            "pasapalabra",
+            "ni idea",
+            "no lo se",
+            "no se la respuesta"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "el"
+              }
+            },
+            {
+              "name": {
+                "value": "la"
+              }
+            },
+            {
+              "name": {
+                "value": "los"
+              }
+            },
+            {
+              "name": {
+                "value": "las"
+              }
+            }
+          ],
+          "name": "articulo"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "seis",
+                "synonyms": [
+                  "6"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ocho",
+                "synonyms": [
+                  "8"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "doscientos",
+                "synonyms": [
+                  "200"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "quinientos",
+                "synonyms": [
+                  "500"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "seiscientos cincuenta",
+                "synonyms": [
+                  "650"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Abductor"
+              }
+            },
+            {
+              "name": {
+                "value": "Abductores"
+              }
+            },
+            {
+              "name": {
+                "value": "Abductor de meñique"
+              }
+            },
+            {
+              "name": {
+                "value": "Abductor corto del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Abductor largo del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Accesorio del flexor largo común de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Aductor"
+              }
+            },
+            {
+              "name": {
+                "value": "Aductores"
+              }
+            },
+            {
+              "name": {
+                "value": "Aductor del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Aductor mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Aductor mediano"
+              }
+            },
+            {
+              "name": {
+                "value": "Aductor menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Ancóneo"
+              }
+            },
+            {
+              "name": {
+                "value": "Angular"
+              }
+            },
+            {
+              "name": {
+                "value": "Angular del omoplato"
+              }
+            },
+            {
+              "name": {
+                "value": "Angular del omóplato"
+              }
+            },
+            {
+              "name": {
+                "value": "Aproximador"
+              }
+            },
+            {
+              "name": {
+                "value": "Aproximador del primer dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "Bíceps"
+              }
+            },
+            {
+              "name": {
+                "value": "Bíceps braquial"
+              }
+            },
+            {
+              "name": {
+                "value": "Bíceps crural"
+              }
+            },
+            {
+              "name": {
+                "value": "Braquial"
+              }
+            },
+            {
+              "name": {
+                "value": "Braquial anterior"
+              }
+            },
+            {
+              "name": {
+                "value": "Bulbocavernoso"
+              }
+            },
+            {
+              "name": {
+                "value": "Complexo"
+              }
+            },
+            {
+              "name": {
+                "value": "Complexos"
+              }
+            },
+            {
+              "name": {
+                "value": "Complexo menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Complexo mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Constrictor"
+              }
+            },
+            {
+              "name": {
+                "value": "Constrictor de la vulva"
+              }
+            },
+            {
+              "name": {
+                "value": "Coracobraquial"
+              }
+            },
+            {
+              "name": {
+                "value": "Corrugador"
+              }
+            },
+            {
+              "name": {
+                "value": "Corrugador superciliar"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuadrado"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuadrados"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuadrado carnoso de Silvio"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuadrado crural"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuadrado lumbar"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuádriceps",
+                "synonyms": [
+                  "cuadriceps"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Cubital"
+              }
+            },
+            {
+              "name": {
+                "value": "Cubitales"
+              }
+            },
+            {
+              "name": {
+                "value": "Cubital anterior"
+              }
+            },
+            {
+              "name": {
+                "value": "Cubital posterior"
+              }
+            },
+            {
+              "name": {
+                "value": "Deltoides"
+              }
+            },
+            {
+              "name": {
+                "value": "Diafragma"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorsal"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorsales"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorsal ancho"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorsal largo"
+              }
+            },
+            {
+              "name": {
+                "value": "Elevador"
+              }
+            },
+            {
+              "name": {
+                "value": "Elevador del ano"
+              }
+            },
+            {
+              "name": {
+                "value": "Epiespinosos"
+              }
+            },
+            {
+              "name": {
+                "value": "Escalenos"
+              }
+            },
+            {
+              "name": {
+                "value": "Esfínter"
+              }
+            },
+            {
+              "name": {
+                "value": "Esfínters"
+              }
+            },
+            {
+              "name": {
+                "value": "Esfínteres"
+              }
+            },
+            {
+              "name": {
+                "value": "Esfínter externo de la uretra"
+              }
+            },
+            {
+              "name": {
+                "value": "Esfínter externo del ano"
+              }
+            },
+            {
+              "name": {
+                "value": "Esplenio"
+              }
+            },
+            {
+              "name": {
+                "value": "Esplenios"
+              }
+            },
+            {
+              "name": {
+                "value": "Esplenio de la cabeza"
+              }
+            },
+            {
+              "name": {
+                "value": "Esplenio del cuello"
+              }
+            },
+            {
+              "name": {
+                "value": "Estapedio"
+              }
+            },
+            {
+              "name": {
+                "value": "Esternocleidomastoideo"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensores"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor común de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor corto de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor corto del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor largo común de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor largo del primer dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor largo del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor propio del dedo índice"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor propio del dedo meñique"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor radial corto"
+              }
+            },
+            {
+              "name": {
+                "value": "Extensor radial largo"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexores"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor común de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor común profundo de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor común superficial de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor corto común de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor corto del meñique"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor corto del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor corto del quinto dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor largo común de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor largo del dedo gordo"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor largo del primer dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor largo del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor largo profundo común de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Flexor largo superficial común de los dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Glúteo"
+              }
+            },
+            {
+              "name": {
+                "value": "Glúteos"
+              }
+            },
+            {
+              "name": {
+                "value": "Glúteo mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Glúteo mediano"
+              }
+            },
+            {
+              "name": {
+                "value": "Glúteo menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Gracillis"
+              }
+            },
+            {
+              "name": {
+                "value": "Infraespinoso"
+              }
+            },
+            {
+              "name": {
+                "value": "Intercostal"
+              }
+            },
+            {
+              "name": {
+                "value": "Intercostales"
+              }
+            },
+            {
+              "name": {
+                "value": "Intercostales externos"
+              }
+            },
+            {
+              "name": {
+                "value": "Intercostales internos"
+              }
+            },
+            {
+              "name": {
+                "value": "Intercostales medios"
+              }
+            },
+            {
+              "name": {
+                "value": "Interóseo"
+              }
+            },
+            {
+              "name": {
+                "value": "Interóseos"
+              }
+            },
+            {
+              "name": {
+                "value": "Interóseos dorsales"
+              }
+            },
+            {
+              "name": {
+                "value": "Interóseos dorsales del pie"
+              }
+            },
+            {
+              "name": {
+                "value": "Interóseos ventrales"
+              }
+            },
+            {
+              "name": {
+                "value": "Interóseos ventrales del pie"
+              }
+            },
+            {
+              "name": {
+                "value": "Intertransverso"
+              }
+            },
+            {
+              "name": {
+                "value": "Intertransversos"
+              }
+            },
+            {
+              "name": {
+                "value": "Isquiocavernoso"
+              }
+            },
+            {
+              "name": {
+                "value": "Isquiocoxígeno"
+              }
+            },
+            {
+              "name": {
+                "value": "Largo del cuello"
+              }
+            },
+            {
+              "name": {
+                "value": "Lumbricales"
+              }
+            },
+            {
+              "name": {
+                "value": "Lumbricales del pie"
+              }
+            },
+            {
+              "name": {
+                "value": "Masereto"
+              }
+            },
+            {
+              "name": {
+                "value": "Multífidos"
+              }
+            },
+            {
+              "name": {
+                "value": "Oblicuo"
+              }
+            },
+            {
+              "name": {
+                "value": "Oblicuos"
+              }
+            },
+            {
+              "name": {
+                "value": "Oblicuo mayor de la cabeza"
+              }
+            },
+            {
+              "name": {
+                "value": "Oblicuo mayor del abdomen"
+              }
+            },
+            {
+              "name": {
+                "value": "Oblicuo menor de la cabeza"
+              }
+            },
+            {
+              "name": {
+                "value": "Oblicuo menor del abdomen"
+              }
+            },
+            {
+              "name": {
+                "value": "Obturador"
+              }
+            },
+            {
+              "name": {
+                "value": "Obturadores"
+              }
+            },
+            {
+              "name": {
+                "value": "Obturador externo"
+              }
+            },
+            {
+              "name": {
+                "value": "Obturador interno"
+              }
+            },
+            {
+              "name": {
+                "value": "Omohoideo"
+              }
+            },
+            {
+              "name": {
+                "value": "Oponente"
+              }
+            },
+            {
+              "name": {
+                "value": "Oponentes"
+              }
+            },
+            {
+              "name": {
+                "value": "Oponente del meñique"
+              }
+            },
+            {
+              "name": {
+                "value": "Oponente del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Oponente del quinto dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "Palmar"
+              }
+            },
+            {
+              "name": {
+                "value": "Palmares"
+              }
+            },
+            {
+              "name": {
+                "value": "Palmar mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Palmar menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Pectíneo"
+              }
+            },
+            {
+              "name": {
+                "value": "Pectoral"
+              }
+            },
+            {
+              "name": {
+                "value": "Pectorales"
+              }
+            },
+            {
+              "name": {
+                "value": "Pectoral mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Pectoral menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Pedio"
+              }
+            },
+            {
+              "name": {
+                "value": "Peroneo"
+              }
+            },
+            {
+              "name": {
+                "value": "Peroneos"
+              }
+            },
+            {
+              "name": {
+                "value": "Peroneo anterior"
+              }
+            },
+            {
+              "name": {
+                "value": "Peroneo lateral corto"
+              }
+            },
+            {
+              "name": {
+                "value": "Peroneo lateral largo"
+              }
+            },
+            {
+              "name": {
+                "value": "Piramidal"
+              }
+            },
+            {
+              "name": {
+                "value": "Poplíteo"
+              }
+            },
+            {
+              "name": {
+                "value": "Primer radial"
+              }
+            },
+            {
+              "name": {
+                "value": "Pronador"
+              }
+            },
+            {
+              "name": {
+                "value": "Pronadores"
+              }
+            },
+            {
+              "name": {
+                "value": "Pronador cuadrado"
+              }
+            },
+            {
+              "name": {
+                "value": "Pronador redondo"
+              }
+            },
+            {
+              "name": {
+                "value": "Psoas ilíaco"
+              }
+            },
+            {
+              "name": {
+                "value": "Psoas ilíaco de la columna"
+              }
+            },
+            {
+              "name": {
+                "value": "Psoas ilíaco cadera"
+              }
+            },
+            {
+              "name": {
+                "value": "Recto"
+              }
+            },
+            {
+              "name": {
+                "value": "Rectos"
+              }
+            },
+            {
+              "name": {
+                "value": "Recto anterior"
+              }
+            },
+            {
+              "name": {
+                "value": "Recto anterior mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Recto anterior menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Recto del abdomen"
+              }
+            },
+            {
+              "name": {
+                "value": "Recto dorsal menor de la cabeza"
+              }
+            },
+            {
+              "name": {
+                "value": "Recto interno"
+              }
+            },
+            {
+              "name": {
+                "value": "Recto lateral"
+              }
+            },
+            {
+              "name": {
+                "value": "Redondo"
+              }
+            },
+            {
+              "name": {
+                "value": "Redondos"
+              }
+            },
+            {
+              "name": {
+                "value": "Redondo mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Redondo menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Romboide"
+              }
+            },
+            {
+              "name": {
+                "value": "Romboides"
+              }
+            },
+            {
+              "name": {
+                "value": "Romboide menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Romboide mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Rotadore"
+              }
+            },
+            {
+              "name": {
+                "value": "Rotadores"
+              }
+            },
+            {
+              "name": {
+                "value": "Sartorio"
+              }
+            },
+            {
+              "name": {
+                "value": "Segundo radial"
+              }
+            },
+            {
+              "name": {
+                "value": "Semiespinoso"
+              }
+            },
+            {
+              "name": {
+                "value": "Semiespinosos"
+              }
+            },
+            {
+              "name": {
+                "value": "Semiespinoso cervical"
+              }
+            },
+            {
+              "name": {
+                "value": "Semiespinoso dorsal"
+              }
+            },
+            {
+              "name": {
+                "value": "Semimembranoso"
+              }
+            },
+            {
+              "name": {
+                "value": "Semitendinoso"
+              }
+            },
+            {
+              "name": {
+                "value": "Separador"
+              }
+            },
+            {
+              "name": {
+                "value": "Separadores"
+              }
+            },
+            {
+              "name": {
+                "value": "Separador del primer dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "Separador del quinto dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "Separador del pulgar"
+              }
+            },
+            {
+              "name": {
+                "value": "Serrato"
+              }
+            },
+            {
+              "name": {
+                "value": "Serrato menor"
+              }
+            },
+            {
+              "name": {
+                "value": "Serrato mayor"
+              }
+            },
+            {
+              "name": {
+                "value": "Serratos"
+              }
+            },
+            {
+              "name": {
+                "value": "Serratos dorsales inferiores"
+              }
+            },
+            {
+              "name": {
+                "value": "Serratos dorsales superiores"
+              }
+            },
+            {
+              "name": {
+                "value": "Subcostal"
+              }
+            },
+            {
+              "name": {
+                "value": "Subcostales"
+              }
+            },
+            {
+              "name": {
+                "value": "Subescapular"
+              }
+            },
+            {
+              "name": {
+                "value": "Supinador"
+              }
+            },
+            {
+              "name": {
+                "value": "Supinadores"
+              }
+            },
+            {
+              "name": {
+                "value": "Supinador corto"
+              }
+            },
+            {
+              "name": {
+                "value": "Supinador largo"
+              }
+            },
+            {
+              "name": {
+                "value": "Supracostal"
+              }
+            },
+            {
+              "name": {
+                "value": "Supracostales"
+              }
+            },
+            {
+              "name": {
+                "value": "Supraespinoso"
+              }
+            },
+            {
+              "name": {
+                "value": "Tensor de la fascia lata"
+              }
+            },
+            {
+              "name": {
+                "value": "Tibial"
+              }
+            },
+            {
+              "name": {
+                "value": "Tibiales"
+              }
+            },
+            {
+              "name": {
+                "value": "Tibial anterior"
+              }
+            },
+            {
+              "name": {
+                "value": "Tibial posterior"
+              }
+            },
+            {
+              "name": {
+                "value": "Transverso"
+              }
+            },
+            {
+              "name": {
+                "value": "Transversos"
+              }
+            },
+            {
+              "name": {
+                "value": "Transverso del abdomen"
+              }
+            },
+            {
+              "name": {
+                "value": "Transverso profundo del periné"
+              }
+            },
+            {
+              "name": {
+                "value": "Transverso superficial de periné"
+              }
+            },
+            {
+              "name": {
+                "value": "Trapecio"
+              }
+            },
+            {
+              "name": {
+                "value": "Triangular del esternón"
+              }
+            },
+            {
+              "name": {
+                "value": "Triceps"
+              }
+            },
+            {
+              "name": {
+                "value": "Triceps braquial"
+              }
+            },
+            {
+              "name": {
+                "value": "Triceps sural del delgado plantar"
+              }
+            },
+            {
+              "name": {
+                "value": "Triceps sural del gemelo"
+              }
+            },
+            {
+              "name": {
+                "value": "Triceps sural del sóleo"
+              }
+            },
+            {
+              "name": {
+                "value": "Cabeza"
+              }
+            },
+            {
+              "name": {
+                "value": "Sincipucio"
+              }
+            },
+            {
+              "name": {
+                "value": "Occipucio"
+              }
+            },
+            {
+              "name": {
+                "value": "Sien"
+              }
+            },
+            {
+              "name": {
+                "value": "Oreja"
+              }
+            },
+            {
+              "name": {
+                "value": "Orejas"
+              }
+            },
+            {
+              "name": {
+                "value": "Cara"
+              }
+            },
+            {
+              "name": {
+                "value": "Ojo"
+              }
+            },
+            {
+              "name": {
+                "value": "Ojos"
+              }
+            },
+            {
+              "name": {
+                "value": "Mejilla"
+              }
+            },
+            {
+              "name": {
+                "value": "Mejillas"
+              }
+            },
+            {
+              "name": {
+                "value": "Nariz"
+              }
+            },
+            {
+              "name": {
+                "value": "Boca"
+              }
+            },
+            {
+              "name": {
+                "value": "Mentón"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuello"
+              }
+            },
+            {
+              "name": {
+                "value": "Tronco"
+              }
+            },
+            {
+              "name": {
+                "value": "Tórax"
+              }
+            },
+            {
+              "name": {
+                "value": "Pecho"
+              }
+            },
+            {
+              "name": {
+                "value": "Abdomen"
+              }
+            },
+            {
+              "name": {
+                "value": "Pelvis"
+              }
+            },
+            {
+              "name": {
+                "value": "Espalda"
+              }
+            },
+            {
+              "name": {
+                "value": "Miembro"
+              }
+            },
+            {
+              "name": {
+                "value": "Miembros"
+              }
+            },
+            {
+              "name": {
+                "value": "Miembro inferior"
+              }
+            },
+            {
+              "name": {
+                "value": "Miembro superior"
+              }
+            },
+            {
+              "name": {
+                "value": "Cintura"
+              }
+            },
+            {
+              "name": {
+                "value": "Cinturas"
+              }
+            },
+            {
+              "name": {
+                "value": "Cintura pélvica"
+              }
+            },
+            {
+              "name": {
+                "value": "Cintura pectoral"
+              }
+            },
+            {
+              "name": {
+                "value": "Cintura del miembro inferior"
+              }
+            },
+            {
+              "name": {
+                "value": "Cintura del miembro superior"
+              }
+            },
+            {
+              "name": {
+                "value": "Axila"
+              }
+            },
+            {
+              "name": {
+                "value": "Axilas"
+              }
+            },
+            {
+              "name": {
+                "value": "Brazo"
+              }
+            },
+            {
+              "name": {
+                "value": "Brazos"
+              }
+            },
+            {
+              "name": {
+                "value": "Codo"
+              }
+            },
+            {
+              "name": {
+                "value": "Codos"
+              }
+            },
+            {
+              "name": {
+                "value": "Antebrazo"
+              }
+            },
+            {
+              "name": {
+                "value": "Antebrazos"
+              }
+            },
+            {
+              "name": {
+                "value": "Mano"
+              }
+            },
+            {
+              "name": {
+                "value": "Manos"
+              }
+            },
+            {
+              "name": {
+                "value": "Carpo"
+              }
+            },
+            {
+              "name": {
+                "value": "Carpos"
+              }
+            },
+            {
+              "name": {
+                "value": "Metacarpo"
+              }
+            },
+            {
+              "name": {
+                "value": "Metacarpos"
+              }
+            },
+            {
+              "name": {
+                "value": "Palma"
+              }
+            },
+            {
+              "name": {
+                "value": "Palmas"
+              }
+            },
+            {
+              "name": {
+                "value": "Palma de la mano"
+              }
+            },
+            {
+              "name": {
+                "value": "Palma de las manos"
+              }
+            },
+            {
+              "name": {
+                "value": "Palmas de las manos"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorso"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorsos"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorso de la mano"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorso de las manos"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorsos de las manos"
+              }
+            },
+            {
+              "name": {
+                "value": "Dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "Dedos"
+              }
+            },
+            {
+              "name": {
+                "value": "Dedo de la mano"
+              }
+            },
+            {
+              "name": {
+                "value": "Dedos de la mano"
+              }
+            },
+            {
+              "name": {
+                "value": "Dedos de las manos"
+              }
+            },
+            {
+              "name": {
+                "value": "Nalga"
+              }
+            },
+            {
+              "name": {
+                "value": "Nalgas"
+              }
+            },
+            {
+              "name": {
+                "value": "Cadera"
+              }
+            },
+            {
+              "name": {
+                "value": "Caderas"
+              }
+            },
+            {
+              "name": {
+                "value": "Muslo"
+              }
+            },
+            {
+              "name": {
+                "value": "Muslos"
+              }
+            },
+            {
+              "name": {
+                "value": "Rodilla"
+              }
+            },
+            {
+              "name": {
+                "value": "Rodillas"
+              }
+            },
+            {
+              "name": {
+                "value": "Popliteo"
+              }
+            },
+            {
+              "name": {
+                "value": "Popliteos"
+              }
+            },
+            {
+              "name": {
+                "value": "Pierna"
+              }
+            },
+            {
+              "name": {
+                "value": "Piernas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pantorrilla"
+              }
+            },
+            {
+              "name": {
+                "value": "Pantorrillas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pie"
+              }
+            },
+            {
+              "name": {
+                "value": "Pies"
+              }
+            },
+            {
+              "name": {
+                "value": "Tarso"
+              }
+            },
+            {
+              "name": {
+                "value": "Tarsos"
+              }
+            },
+            {
+              "name": {
+                "value": "Talón"
+              }
+            },
+            {
+              "name": {
+                "value": "Talones"
+              }
+            },
+            {
+              "name": {
+                "value": "Metatarso"
+              }
+            },
+            {
+              "name": {
+                "value": "Metatarsos"
+              }
+            },
+            {
+              "name": {
+                "value": "Planta"
+              }
+            },
+            {
+              "name": {
+                "value": "Plantas"
+              }
+            },
+            {
+              "name": {
+                "value": "Planta del pie"
+              }
+            },
+            {
+              "name": {
+                "value": "Planta de los pies"
+              }
+            },
+            {
+              "name": {
+                "value": "Plantas de los pies"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorso del pie"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorso de los pies"
+              }
+            },
+            {
+              "name": {
+                "value": "Dorsos de los pies"
+              }
+            },
+            {
+              "name": {
+                "value": "Dedo del pie"
+              }
+            },
+            {
+              "name": {
+                "value": "Dedos del pie"
+              }
+            },
+            {
+              "name": {
+                "value": "Dedos de los pies"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavidades corporales"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavidad craneal"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavidad torácica"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavidad abdominal"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavidad pélvica"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavidad abdominal y pélvica"
+              }
+            }
+          ],
+          "name": "solucion"
+        }
+      ]
+    }
+  },
+  "version": "27"
+}

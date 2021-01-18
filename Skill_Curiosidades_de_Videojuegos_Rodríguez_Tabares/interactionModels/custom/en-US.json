@@ -1,0 +1,62 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "videogame curiosities",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel",
+            "wait"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "give me help",
+            "help me",
+            "some help",
+            "i need help",
+            "can you give me some help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "no",
+            "stop",
+            "enough",
+            "finalize",
+            "end",
+            "end up"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [],
+          "samples": [
+            "another curiosity",
+            "another fact",
+            "tell me a curiosity",
+            "tell me a new fact",
+            "tell me a fact",
+            "tell me something",
+            "tell me something curious",
+            "tell me another one",
+            "another one",
+            "another",
+            "ok",
+            "yes"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "6"
+}

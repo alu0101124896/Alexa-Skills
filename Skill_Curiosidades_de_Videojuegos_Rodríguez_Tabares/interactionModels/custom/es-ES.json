@@ -1,0 +1,62 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "curiosidades de videojuegos",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar",
+            "cancela",
+            "espera"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "puedes ayudarme",
+            "necesito ayuda",
+            "ayuda",
+            "dame ayuda",
+            "una ayuda",
+            "dame una ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "no",
+            "alto",
+            "basta",
+            "suficiente",
+            "finalizar",
+            "terminar"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [],
+          "samples": [
+            "cuéntame alguna curiosidad",
+            "dime alguna curiosidad",
+            "cuéntame una curiosidad",
+            "dime una curiosidad",
+            "cuéntame algo",
+            "dime algo",
+            "adelante",
+            "dime otra",
+            "otra",
+            "vale",
+            "si"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "14"
+}
